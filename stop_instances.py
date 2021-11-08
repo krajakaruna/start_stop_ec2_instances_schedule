@@ -22,7 +22,7 @@ def lambda_handler():
             if state['Name'] == "running":
                 instance_list.append(instance['InstanceId'])
     
-    
+# stop the instances
     response2 = client.stop_instances(
         InstanceIds= instance_list
     )

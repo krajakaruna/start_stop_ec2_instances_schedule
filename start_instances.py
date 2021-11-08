@@ -20,7 +20,7 @@ def lambda_handler():
             if state['Name'] == "stopped":
                 instance_list.append(instance['InstanceId'])
     
-    
+ #start the instances   
     response2 = client.start_instances(
         InstanceIds= instance_list
     )
