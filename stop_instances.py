@@ -29,4 +29,4 @@ def lambda_handler():
 
     print(response2)
 
-lambda_handler()
+#lambda_handler()
